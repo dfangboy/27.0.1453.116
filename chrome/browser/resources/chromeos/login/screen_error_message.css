@@ -1,0 +1,77 @@
+/* Copyright (c) 2012 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+#error-message {
+  min-width: 650px;
+}
+
+.show-with-proxy-error,
+.show-with-captive-portal-error,
+.show-with-timeout-error,
+.show-with-offline-error,
+.guest-signin,
+.offline-login {
+  display: none;
+}
+
+.show-captive-portal-error .show-with-captive-portal-error,
+.show-proxy-error .show-with-proxy-error,
+.show-timeout-error .show-with-timeout-error,
+.show-offline-error .show-with-offline-error,
+.allow-guest-signin .guest-signin,
+.allow-offline-login .offline-login {
+  display: block;
+}
+
+#oobe.error-message #step-logo {
+  z-index: 1;
+}
+
+.error-header {
+  background: -webkit-linear-gradient(rgba(255,255,255,0.99),
+                                      rgba(255,255,255,0.97));
+  border-bottom: 1px solid #eee;
+  padding: 71px 20px 50px;
+  text-align: center;
+}
+
+.error-icon {
+  -webkit-margin-after: 40px;
+}
+
+.error-title {
+  color: #606060;
+  font-size: 15px;
+}
+
+.error-body {
+  background: -webkit-linear-gradient(rgba(255,255,255,0.97),
+                                      rgba(255,255,255,0.95));
+  padding: 20px 20px 20px;
+}
+
+.error-message-paragraph {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.error-message-paragraph {
+  -webkit-margin-before: 20px;
+}
+
+.error-message-paragraph a {
+  color: rgb(17,85,204);
+  text-decoration: none;
+}
+
+#offline-network-control {
+  -webkit-align-items: center;
+  display: -webkit-flex;
+}
+
+.offline-network-list-label {
+  -webkit-margin-end: 10px;
+}
+
